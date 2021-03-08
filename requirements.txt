@@ -3,5 +3,7 @@ chardet==4.0.0
 idna==2.10
 pytimeparse==1.1.8
 requests==2.25.1
+six==1.15.0
 twelvedata==1.1.7
 urllib3==1.26.3
+websocket-client==0.58.0

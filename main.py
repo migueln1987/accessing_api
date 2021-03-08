@@ -2,17 +2,20 @@ import config
 
 from twelvedata import TDClient
 
-td = TDClient(apikey=config.api_key)
+API_KEY = config.api_key
+PREFIX = "https://api.twelvedata.com"
+ENDPOINT = "/quote"
+SYMBOL = "GME"
+INTERVAL = "1minapi_key"
+EXCHANGE = "NYSE"
+TYPE = "Stock"
+FORMAT = "JSON"
 
-# Access Time Series
-ts = td.time_series(
-    symbol="MMM",
-    interval="5min"
-).as_json()
+td = TDClient(apikey=API_KEY)
 
 
 def dummy_function():
-    print(config.api_key)
+    print(API_KEY)
 
 
 if __name__ == '__main__':
