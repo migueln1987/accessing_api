@@ -4,6 +4,12 @@ from twelvedata import TDClient
 
 td = TDClient(apikey=config.api_key)
 
+# Access Time Series
+ts = td.time_series(
+    symbol="MMM",
+    interval="5min"
+).as_json()
+
 
 def dummy_function():
     print(config.api_key)
