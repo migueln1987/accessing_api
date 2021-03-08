@@ -1,0 +1,4 @@
+# Holds API key for project
+config.py
+# Project exclude paths
+/venv/
